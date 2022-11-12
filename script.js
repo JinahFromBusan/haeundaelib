@@ -1,0 +1,10 @@
+$(function(){
+    $("#top_menu").mouseover(function(){
+        $(".detail_menu").stop().slideDown();
+        $("#main_menu_back").stop().slideDown();
+    });
+    $("#top_menu").mouseleave(function(){
+        $("#main_menu_back").stop().slideUp();
+        $(".detail_menu").stop().slideUp();
+    });
+});
