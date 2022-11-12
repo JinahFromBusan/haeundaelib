@@ -62,7 +62,6 @@ header #search_word{
   border-radius: 50%;
   border: 1px solid #003C83;
   background-color: #003C83;
-  /* box-sizing: content-box;    */
   position: absolute;
   top: -1px;
   right: -1px;
@@ -163,7 +162,6 @@ header button:hover{
   width: 100%;
   height: 430px;
   background-color: #232323;
-  /* border: 1px solid black; */
   display: none;
 }
 
@@ -174,7 +172,7 @@ header button:hover{
   position: absolute;
   color: #FFF;
   text-align: left;
-	display:none;
+  display:none;
   font-size: 13px;
   border-left: 0.5px solid white;
 }
