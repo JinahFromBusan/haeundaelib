@@ -214,14 +214,6 @@ header button:hover{
   height: 90%;
   position: relative;
 }
-/* 3번째 라인 오른쪽 박스*/
-#notice{
-  width: 61%;
-  height: 90%;
-  border: 1px solid pink;
-}
-#imgSilde div{
-}
 .prev, .next{
   position: absolute;
   width: 50px;
@@ -252,4 +244,73 @@ header button:hover{
 .off{
   opacity:0.2;
   cursor:default;
+}
+/* 3번째 라인 오른쪽 박스*/
+#notice_box{
+  width: 61%;
+  height: 90%;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  color: #4A4A61;
+}
+/* 3번째줄 오른쪽 박스 (휴관일, 이용시간, 행사안내) */
+.guide{
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: space-between;
+}
+.guide > div{
+  width: 32%;
+  height: 100%;
+  background-color: #FFF;
+  padding: 25px;
+  font-weight: bold;
+  position: relative;
+}
+.guide h2{
+  font-size: 1.2em;
+}
+.guide p{
+  margin-top: 5px;
+  font-size: 0.9rem;
+  line-height: 1.1em;
+  color: #666;
+}
+.guide span{
+  margin-top: 35px;
+  line-height: 25px;
+  font-size: 0.7em;
+  color: grey;
+  display: flex;
+}
+.guide hr{
+  width: 25px;
+  height: 3px;
+  border: 0;
+  background-color: #000;
+  margin-top: 9px;
+  transition: .3s;
+}
+.guide img{
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+.guide > div:hover{
+  background-color: #B9E067;
+  cursor: pointer;
+}
+.guide > div:hover hr{
+  width: 40px;
+  background-color: white;
+}
+.guide > div:hover span{
+  color: white;
+}
+.notice{
+  width: 100%;
+  height: 62%;
+  border: 1px solid blue;
 }
