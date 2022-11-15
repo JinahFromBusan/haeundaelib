@@ -312,5 +312,103 @@ header button:hover{
 .notice{
   width: 100%;
   height: 62%;
-  border: 1px solid blue;
+  background-color: #FFF;
+}
+.tab{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.tab > div{
+  width: 31%;
+  height: 100%;
+  border: 1px solid lightgray;
+  text-align: center;
+  line-height: 65px;
+  background-color: #F0F0F0;
+}
+.tab > div:first-child{
+  background-color: #003C83;
+  color: #FFF;
+}
+.tab > div:last-child{
+  width: 7%;
+  background-color: #FFF;
+}
+.tab > div:hover{
+  cursor: pointer;
+}
+.notice > table{
+  width: 100%;
+  height: 80%;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+#middle_back{
+  width: 100%;
+  background-color: #FFF;
+}
+.middle{
+  width: 1600px;
+  height: 190px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side{
+  width: 40px;
+  height: 40px;
+  background-color: #CACFD2 ;
+  border-radius: 50%;
+  font-size: 3em;
+  text-align: center;
+  line-height: 40px;
+  color: #FFF;
+}
+.icon_slide{
+  width: 1400px;
+  height: 100%;
+  overflow: hidden;
+}
+/* 아이콘 링크 큰 박스 */
+.icon_slide > div{
+  width: calc(1400px/7);
+  height: 190px;
+  /* line-height: 100px; */
+  float: left;
+  text-align: center;
+}
+/* 아이콘 링크 박스 호버 시 */
+.icon_slide > div:hover .circle{
+  background-color: #E2F0FF;
+}
+.icon_slide > div:hover .circle>img{
+  transform: scaleX(-1);
+}
+.icon_slide > div:hover .icon_slide span{
+  color: #2966AD;
+}
+/* 원형 링크 아이콘 */
+.icon_slide > div > div{
+  width: 90px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  background-color: #F4F6F6;
+  border-radius: 50%;
+}
+.icon_slide img{
+  margin-top: 17px;
+  transition: .3s;
+}
+.icon_slide span{
+  font-size: 1em;
+  color: #3f3f3f;
+  font-weight: bold;
 }
