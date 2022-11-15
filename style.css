@@ -369,6 +369,10 @@ header button:hover{
   line-height: 40px;
   color: #FFF;
 }
+.side:hover{
+  background-color: #BBB;
+  cursor: pointer;
+}
 .icon_slide{
   width: 1400px;
   height: 100%;
