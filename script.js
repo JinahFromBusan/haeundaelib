@@ -29,4 +29,52 @@ $(function(){
             $(".next").addClass("off");
         }
     });
+
+    // 공지사항, 독서문화행사, 추천도서
+    $(".tab_box > div").css("background-color", "#F0F0F0");
+    $(".notice").css({
+        "background-color": "#003C83",
+        "color": "#FFF"
+    });
+    $(".notice").click(function(){
+        $(".tab").css({
+            "background-color": "#F0F0F0",
+            "color" : "#000"
+        });
+        $(this).css({
+            "background-color" : "#003C83",
+            "color" : "#FFF"
+        });
+    });
+    
+    $(".bookEvent").click(function(){
+        $(".tab").css({
+            "background-color": "#F0F0F0",
+            "color" : "#000"
+        });
+        $(this).css({
+            "background-color" : "#003C83",
+            "color" : "#FFF"
+        });
+    });
+    $(".recommended").click(function(){
+        $(".tab").css({
+            "background-color": "#F0F0F0",
+            "color" : "#000"
+        });
+        $(this).css({
+            "background-color" : "#003C83",
+            "color" : "#FFF"
+        });
+    });
+
+    // 원형 아이콘 링크 왼쪽 버튼 클릭
+    $(".btn_left").click(function(){
+
+    });
+    // 원형 아이콘 링크 오른쪽 버튼 클릭
+    $(".btn_right").click(function(){
+        $(".icon_slide").css("left", "-200px");
+        $(".icon_slide").css("")
+    });
 });

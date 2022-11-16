@@ -310,32 +310,32 @@ header button:hover{
   color: white;
 }
 /* 공지사항, 독서문화행사, 추천도서 */
-.notice{
+.notice_box{
   width: 100%;
   height: 62%;
   background-color: #FFF;
 }
-.tab{
+.tab_box{
   width: 100%;
   height: 20%;
   display: flex;
   font-size: 1.2em;
   font-weight: bold;
 }
-.tab > div{
+/* .notice{
+  background-color: #003C83;
+  color: #FFF;
+} */
+.tab_box > div{
   width: 31%;
   height: 100%;
   border: 1px solid lightgray;
   text-align: center;
   line-height: 65px;
-  background-color: #F0F0F0;
+  /* background-color: #F0F0F0; */
   cursor: pointer;
 }
-.tab > div:first-child{
-  background-color: #003C83;
-  color: #FFF;
-}
-.tab > div:last-child{
+.tab_box > div:last-child{
   width: 7%;
   background-color: #FFF;
 }
@@ -358,6 +358,7 @@ header button:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .side{
   width: 40px;
@@ -377,6 +378,9 @@ header button:hover{
   width: 1400px;
   height: 100%;
   overflow: hidden;
+  position: absolute;
+  left: 100px;
+  border: 1px solid pink;
 }
 /* 아이콘 링크 큰 박스 */
 .icon_slide > div{
