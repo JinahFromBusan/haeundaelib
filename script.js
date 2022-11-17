@@ -67,14 +67,4 @@ $(function(){
             "color" : "#FFF"
         });
     });
-
-    // 원형 아이콘 링크 왼쪽 버튼 클릭
-    $(".btn_left").click(function(){
-
-    });
-    // 원형 아이콘 링크 오른쪽 버튼 클릭
-    $(".btn_right").click(function(){
-        $(".icon_slide").css("left", "-200px");
-        $(".icon_slide").css("")
-    });
 });

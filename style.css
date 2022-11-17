@@ -378,17 +378,17 @@ header button:hover{
   width: 1400px;
   height: 100%;
   overflow: hidden;
-  position: absolute;
-  left: 100px;
-  border: 1px solid pink;
+  position: relative;
+  /* border: 1px solid pink; */
 }
 /* 아이콘 링크 큰 박스 */
 .icon_slide > div{
   width: calc(1400px/7);
   height: 190px;
-  /* line-height: 100px; */
-  float: left;
+  /* float: left; */
+  position: absolute;
   text-align: center;
+  transition: .4s;
 }
 /* 아이콘 링크 박스 호버 시 */
 .icon_slide > div:hover{
