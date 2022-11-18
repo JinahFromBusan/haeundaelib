@@ -67,4 +67,11 @@ $(function(){
             "color" : "#FFF"
         });
     });
+    // 아이콘 슬라이드
+    // $('.icon_slide>div').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    // });
 });
