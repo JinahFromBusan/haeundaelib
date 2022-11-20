@@ -13,7 +13,7 @@ window.onload = function(e){
     let btn_left = document.querySelector('.btn_left');
     btn_left.addEventListener('click', function(){
         if(now == 0){
-            now = icons;
+            now = icons-1;
         }else{
             now--;
         }
@@ -24,7 +24,7 @@ window.onload = function(e){
     let btn_right = document.querySelector('.btn_right');
     btn_right.addEventListener('click', function(){
         if(icons == now){
-            now = 0;
+            now = 1;
         }else{
             now++;
         }
@@ -33,15 +33,16 @@ window.onload = function(e){
 
     // 아이콘 위치포지션 주기
     function setPosition(position, now){
+
         for(let i = now; i < icons; i++){
-            if(i == 0){
-                icon[i].style.left = position + "px";
-            }else{
-                icon[i].style.left = (position += 200) + "px";
-            }
+            icon[i].style.left = position + "px";
+            // icon[i].style.transform = "translateX(" + position + "px)";
+            position += 200;
         }
         for(let i = 0; i < now; i++){
-                icon[i].style.left = (position += 200) + "px";
+            icon[i].style.left = position + "px";
+            // icon[i].style.transform = "translateX(" + position + "px)";
+            position += 200;
         }
     }
 }

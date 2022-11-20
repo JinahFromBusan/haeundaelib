@@ -322,22 +322,20 @@ header button:hover{
   font-size: 1.2em;
   font-weight: bold;
 }
-/* .notice{
-  background-color: #003C83;
-  color: #FFF;
-} */
 .tab_box > div{
   width: 31%;
   height: 100%;
   border: 1px solid lightgray;
   text-align: center;
   line-height: 65px;
-  /* background-color: #F0F0F0; */
   cursor: pointer;
 }
 .tab_box > div:last-child{
   width: 7%;
-  background-color: #FFF;
+  background-color: #F0F0F0;
+}
+.tab_box > div:last-child:hover{
+  background-color: #8DC21F;
 }
 .notice > table{
   width: 100%;
@@ -379,7 +377,6 @@ header button:hover{
   height: 100%;
   overflow: hidden;
   position: relative;
-  /* border: 1px solid pink; */
 }
 /* 아이콘 링크 큰 박스 */
 .icon_slide > div{
@@ -388,7 +385,7 @@ header button:hover{
   /* float: left; */
   position: absolute;
   text-align: center;
-  transition: .4s;
+  transition: .2s;
 }
 /* 아이콘 링크 박스 호버 시 */
 .icon_slide > div:hover{
@@ -414,6 +411,7 @@ header button:hover{
   background-color: #F4F6F6;
   border-radius: 50%;
 }
+
 .icon_slide img{
   margin-top: 17px;
   transition: .3s;
@@ -422,4 +420,62 @@ header button:hover{
   font-size: 1em;
   color: #3f3f3f;
   font-weight: bold;
+}
+/* 중간 아이콘 슬라이드 아래쪽 */
+.middle_bottom{
+  width: 1400px;
+  height: 800px;
+  margin: 0 auto;
+}
+.middle_bottom > div{
+  width: 100%;
+  height: 45%;
+  margin-bottom: 2.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.mb_left{
+  width: 72%;
+  height: 100%;
+}
+.mb_right{
+  width: 25%;
+  height: 100%;
+  border: 1px solid pink;
+} 
+/* 이달의책, 원북원부산, 도서관행사 */
+.tab_box2{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.tab_box2 > div{
+  width: 31%;
+  height: 100%;
+  border: 1px solid lightgray;
+  text-align: center;
+  line-height: 65px;
+  cursor: pointer;
+}
+.tab_box2 > div:last-child{
+  width: 7%;
+  background-color: #F0F0F0;
+}
+
+#sns_Story_back{
+  width: 100%;
+  height: 400px;
+  background-color: #EFEFEF;
+}
+#banner_back{
+  width: 100%;
+  height: 65px;
+}
+/***** footer *****/
+footer{
+  width: 100%;
+  height: 210px;
+  background-color: #272727;
 }

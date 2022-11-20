@@ -31,7 +31,9 @@ $(function(){
     });
 
     // 공지사항, 독서문화행사, 추천도서
-    $(".tab_box > div").css("background-color", "#F0F0F0");
+    $(".tab_box > div").eq(0).css("background-color", "#F0F0F0");
+    $(".tab_box > div").eq(1).css("background-color", "#F0F0F0");
+    $(".tab_box > div").eq(2).css("background-color", "#F0F0F0");
     $(".notice").css({
         "background-color": "#003C83",
         "color": "#FFF"
@@ -67,11 +69,44 @@ $(function(){
             "color" : "#FFF"
         });
     });
-    // 아이콘 슬라이드
-    // $('.icon_slide>div').slick({
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    // });
+
+    // 이달의책, 원북원부산, 도서관행사(갤러리)
+    $(".tab_box2 > div").eq(0).css("background-color", "#F0F0F0");
+    $(".tab_box2 > div").eq(1).css("background-color", "#F0F0F0");
+    $(".tab_box2 > div").eq(2).css("background-color", "#F0F0F0");
+    $(".book").css({
+        "background-color": "#003C83",
+        "color": "#FFF"
+    });
+    $(".book").click(function(){
+        $(".tab2").css({
+            "background-color": "#F0F0F0",
+            "color" : "#000"
+        });
+        $(this).css({
+            "background-color" : "#003C83",
+            "color" : "#FFF"
+        });
+    });
+    
+    $(".busan").click(function(){
+        $(".tab2").css({
+            "background-color": "#F0F0F0",
+            "color" : "#000"
+        });
+        $(this).css({
+            "background-color" : "#003C83",
+            "color" : "#FFF"
+        });
+    });
+    $(".event").click(function(){
+        $(".tab2").css({
+            "background-color": "#F0F0F0",
+            "color" : "#000"
+        });
+        $(this).css({
+            "background-color" : "#003C83",
+            "color" : "#FFF"
+        });
+    });
 });
