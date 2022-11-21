@@ -29,6 +29,27 @@ $(function(){
             $(".next").addClass("off");
         }
     });
+    // 4번째 라인 왼쪽 이미지 슬라이드
+    $(".img2 img").eq(0).siblings().css("display","none");
+    $(".prev2").addClass("off");
+    $(".prev2").click(function(){
+        if(!$(".img2 img").first().is(":visible")){
+            $(".img2 img:visible").hide().prev("img").fadeIn("slow");
+            $(".next2").removeClass("off");
+        }
+        if($(".img2 img").first().is(":visible")){
+            $(".prev2").addClass("off");
+        }
+    });
+    $(".next2").click(function(){
+        if(!$(".img2 img").last().is(":visible")){
+            $(".img2 img:visible").hide().next("img").fadeIn("slow");
+            $(".prev2").removeClass("off");
+        }
+        if($(".img2 img").last().is(":visible")){
+            $(".next2").addClass("off");
+        }
+    });
 
     // 공지사항, 독서문화행사, 추천도서
     $(".tab_box > div").eq(0).css("background-color", "#F0F0F0");
