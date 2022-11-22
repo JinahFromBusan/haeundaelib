@@ -367,6 +367,16 @@ header button:hover{
   text-align: center;
   line-height: 40px;
   color: #FFF;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btn_left{
+  background-image: url(./image/icon-prev.png);
+}
+.btn_right{
+  background-image: url(./image/icon-next.png);
+
 }
 .side:hover{
   background-color: #BBB;
@@ -635,6 +645,10 @@ footer{
   font-size: 3em;
   text-align: center;
   line-height: 50px;
+  background-image: url(./image/icon-next.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .link_6 > div:hover{
   background-color: #EAEFF5;
