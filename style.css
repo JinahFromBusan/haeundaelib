@@ -224,12 +224,17 @@ header button:hover{
   font-size: 3em;
   bottom: 0;
   z-index: 99;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .prev{
   left: 0;
+  background-image: url(./image/icon-prev.png);
 }
 .next{
   right: 0;
+  background-image: url(./image/icon-next.png);
 }
 .prev:hover, .next:hover{
   font-weight: bold;
@@ -562,12 +567,17 @@ footer{
   font-size: 3em;
   bottom: 0;
   z-index: 99;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .prev2{
   left: 0;
+  background-image: url(./image/icon-prev.png);
 }
 .next2{
   right: 0;
+  background-image: url(./image/icon-next.png);
 }
 .prev2:hover, .next2:hover{
   font-weight: bold;
