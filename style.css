@@ -351,7 +351,7 @@ header button:hover{
 }
 .middle{
   width: 1600px;
-  height: 190px;
+  height: 200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -381,8 +381,7 @@ header button:hover{
 /* 아이콘 링크 큰 박스 */
 .icon_slide > div{
   width: calc(1400px/7);
-  height: 190px;
-  /* float: left; */
+  height: 180px;
   position: absolute;
   text-align: center;
   transition: .2s;
@@ -410,6 +409,7 @@ header button:hover{
   margin-bottom: 0px;
   background-color: #F4F6F6;
   border-radius: 50%;
+  margin-bottom: -13px;
 }
 
 .icon_slide img{
@@ -592,10 +592,18 @@ footer{
   position: absolute;
   top: 6px;
   right: 10px;
+  transition: .3s;
 }
 .quick_Menu span{
   color: #3A77DE;
   font-weight: bold;
+}
+.quick_Menu > div:hover{
+  color: #3A77DE;
+  cursor: pointer;
+}
+.quick_Menu > div:hover img{
+  right: 25px;
 }
 /* 기관홍보영상 .... */
 .mb_line2 > div:nth-child(3){
