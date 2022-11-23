@@ -534,13 +534,6 @@ header button:hover{
 .mb_right > div:hover hr{
   width: 40px;
 }
-
-/***** footer *****/
-footer{
-  width: 100%;
-  height: 210px;
-  background-color: #272727;
-}
 .mb_line2{
   display: flex;
   justify-content: space-between;
@@ -670,13 +663,82 @@ footer{
 }
 
 
-
+/***** SNS Story *****/
 #sns_Story_back{
   width: 100%;
   height: 400px;
-  background-color: #EFEFEF;
+  /* background-color: #F0F5F9; */
+  background: linear-gradient(90deg, #693831, #F0F5F9);
 }
+.sns_Story{
+  width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.sns_Story > div:first-child{
+  position: absolute;
+  left: 0;
+  top: 20px;
+  color: #FFF;
+  font-weight: bold;
+}
+.sns_Story em{
+  font-size: 2.5em;
+  font-style: normal;
+}
+.sns_Story span{
+  font-size: 1.2em;
+}
+.sns_Story > div:nth-child(2){
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.sns_Story > div:nth-child(2) img{
+  width: 40px;
+  height: 40px;
+}
+.sns_Story > div:nth-child(2) img:hover{
+  cursor: pointer;
+  animation: shake .5s alternate;
+}
+@keyframes shake{
+	0%{	transform: rotate(0deg);}
+	25%{	transform: rotate(-20deg);}
+	50%{	transform: rotate(20deg);}
+	75%{	transform: rotate(0deg);}
+	100%{	transform: rotate(20deg);}
+}
+.sns_Story > div:nth-child(3){
+  width: 1400px;
+  height: 260px;
+  position: absolute;
+  bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+.sns_Story > div:nth-child(3) > div{
+  width: 250px;
+  height: 100%;
+  background-color: #FFF;
+  text-align: center;
+}
+.sns_Story > div:nth-child(3) > div img{
+  margin-top: 25px;
+  border: 1px solid lightgray;
+}
+
+
+/***** 배너모음 *****/
 #banner_back{
   width: 100%;
   height: 65px;
+}
+/***** footer *****/
+footer{
+  width: 100%;
+  height: 210px;
+  background-color: #272727;
 }
