@@ -45,4 +45,7 @@ window.onload = function(e){
             position += 200;
         }
     }
+
+    // 배너모음 슬라이드
+    
 }
